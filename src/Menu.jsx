@@ -5,11 +5,12 @@ import './App.css';
 const Menu = ()=>{
     return(
         <div className="menu">
-            <NavLink to="/">HOME</NavLink>
-            <NavLink to="/user">USER IN</NavLink>
-            <NavLink to="/support">SUPPORT</NavLink>
-            <NavLink to="/contact">CONTACT</NavLink>
-            <NavLink to="/service">SERVICE</NavLink>
+            <NavLink exact activeClassName="active" to="/">HOME</NavLink>
+            <NavLink exact activeClassName="active" to="/user">USER IN</NavLink>
+            <NavLink exact activeClassName="active" to="/search">SEARCH</NavLink>
+            <NavLink exact activeClassName="active" to="/support">SUPPORT</NavLink>
+            <NavLink exact activeClassName="active" to="/contact">CONTACT</NavLink>
+            <NavLink exact activeClassName="active" to="/service">SERVICE</NavLink>
         </div>
     )
 }

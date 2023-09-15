@@ -7,6 +7,7 @@ import Contact from './Contact';
 import Support from './Support';
 import Menu from './Menu';
 import User from './User';
+import Search from './Search';
 
 const App= ()=> {
 
@@ -20,6 +21,7 @@ const App= ()=> {
         <Route path='/contact' element={<Contact/>} />
         <Route path='/service' element={<Service/>}/>
         <Route path='/user/:name/:lname' element={<User/>}/>             {/*name: is known as parameter */}
+        <Route path='/search' element={<Search/>}/>
       </Routes>
     </>
   );
